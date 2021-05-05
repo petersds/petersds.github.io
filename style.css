@@ -1,0 +1,531 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.page-title {
+  color: #020203;
+  /* padding: 0 24px; */
+}
+
+/*header*/
+
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1em;
+}
+
+.collections-text {
+  background-image: url("./images/emuseum6_v_03.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 0 1em;
+  height: 170px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.collections-text h1 {
+  color: white;
+  text-align: left;
+  font-size: 3.5em;
+  line-height: 1.13846;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.6);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+header {
+  background-color: white;
+}
+
+.nav-links-ul,
+.primary ul {
+  display: flex;
+  list-style: none;
+  align-items: flex-end;
+}
+
+.nav-links-ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-right: 1em;
+}
+
+.nav-links li:last-of-type {
+  margin-right: 0;
+}
+
+.nav-links {
+  font-weight: 600;
+  font-size: 20px;
+  padding: 0 2em;
+  text-align: right;
+}
+
+.nav-links a {
+  color: #4d84c4;
+}
+
+.nav-links a:hover {
+  color: #020203;
+}
+
+.active {
+  border-bottom: 2px solid #4d84c4;
+}
+.login {
+  border: 1px solid #791523;
+  padding: 0.5em 1em;
+  color: #791523 !important;
+}
+
+#search,
+search-desk {
+  border: 2px solid black;
+  width: 66%;
+  padding: 1em 1em;
+}
+
+.searchmenu {
+  position: relative;
+}
+
+.fa-search {
+  position: absolute;
+  top: 50%;
+  right: 1em;
+  transform: translateY(-50%);
+}
+
+.advanced {
+  color: #791523 !important;
+  font-size: 16px;
+}
+
+.advanced:hover {
+  color: #020203 !important;
+}
+/*main*/
+
+.explore {
+  background-color: white;
+}
+
+.explore h2 {
+  color: black;
+  text-align: center;
+  font-size: 2.0625rem;
+  line-height: 1;
+  padding: 50px 20px 14px;
+  margin-top: 0;
+}
+
+.successintro {
+  color: black;
+  text-align: center;
+  padding: 16px 8px;
+  font-weight: 800;
+  width: 75%;
+  margin: 0 auto;
+}
+
+/* pacjage sizing may be column-rows */
+.articles {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 16px 8px;
+  margin: 8px 4px;
+  justify-content: space-between;
+}
+
+.articles-centered {
+  justify-content: center;
+}
+article img {
+  width: 100%;
+}
+
+.packages {
+  width: 100%;
+  margin-bottom: 2%;
+  padding: 1em;
+  background-color: #ebebeb;
+  height: auto;
+}
+
+.package-image {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 290px;
+}
+
+.page-subtitle {
+  color: #020203;
+  margin: 8px 0;
+  /* padding: 0.5em; */
+}
+
+.objnum {
+  font-size: 14px;
+  text-align: center;
+}
+
+.packages ul {
+  margin: 0;
+  list-style: none;
+  padding: 1em;
+}
+
+.sub-content {
+  background-image: url("./images/mortar-board.svg");
+  background-repeat: no-repeat;
+  background-position: left top;
+  padding-left: 2em;
+}
+
+.sub-content {
+  background-image: url("./images/map-marker.svg");
+  background-repeat: no-repeat;
+  background-position: left top;
+  padding-left: 2em;
+  margin-top: 1em;
+}
+
+/*spacer for above footer if needed */
+.spacer {
+  margin-top: 40px;
+}
+
+/* footer */
+footer {
+  background-color: #020203;
+  padding: 1em 1.5em 2em;
+}
+
+footer a {
+  color: white;
+}
+
+footer p {
+  color: white;
+}
+
+.contactplus ul,
+.privacyplus ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contactplus li,
+.privacyplus li {
+  margin-right: 1em;
+}
+
+.contactplus ul {
+  margin-bottom: 2em;
+}
+
+.contactplus a {
+  font-weight: 800;
+}
+
+.privacyplus li {
+  border-right: 1px solid white;
+  padding-right: 1em;
+}
+
+.privacyplus li:last-of-type {
+  border-right: none;
+}
+
+.fa-bars {
+  font-size: 32px;
+}
+
+/* Mobile */
+
+.mobile-hide {
+  display: none;
+}
+
+.mobile-show {
+  display: block;
+}
+
+.mobile-nav {
+  display: flex;
+  padding: 8px 0;
+  align-items: center;
+}
+
+.mobile-links {
+  text-align: left;
+  display: none;
+}
+
+.mobile-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+#mobile-menu {
+  cursor: pointer;
+}
+
+/* modal styles */
+
+.warning-outer {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 5;
+}
+
+.warning-content {
+  background: #fff;
+  width: 33%;
+  margin: auto;
+  text-align: center;
+}
+
+.warning-text {
+  padding: 24px;
+}
+
+.warning-header {
+  background-color: #000;
+  color: #eee;
+  padding: 24px;
+  margin: auto;
+}
+
+.warning-btn {
+  background-color: #000;
+  color: #eee;
+  border: 1px solid #000;
+  padding: 16px 24px;
+  margin-bottom: 24px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.warning-btn:hover {
+  background-color: #eee;
+  color: #000;
+}
+
+/* geolocale map style */
+#map {
+  width: 100%;
+  height: 300px;
+}
+
+/* people style */
+.people-content {
+  background-image: url("./images/people02.jpeg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center top;
+  width: 100%;
+  height: 1495px;
+  margin: 0 24px;
+}
+
+/* pacific style */
+.pacific-content {
+  background-image: url("./images/uncveringpacficpast.PNG");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center top;
+  width: 100%;
+  height: 750px;
+}
+
+/* advanced search page style */
+.advanced-search {
+  background-image: url("./images/advancedsearch.PNG");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center top;
+  width: 100%;
+  height: 570px;
+  margin: 0 24px;
+}
+
+/* about page style */
+
+.container {
+  max-width: 700px;
+  margin: auto;
+}
+
+/* groups page */
+.container-lg {
+  max-width: 1045px;
+  margin: auto;
+}
+
+.groups-btn {
+  background-color: #ebebeb;
+  padding: 8px 24px;
+  color: #020203;
+  align-self: center;
+  margin-top: 8px;
+}
+
+.groups-btn:hover {
+  color: #ebebeb;
+  background-color: #020203;
+}
+
+.groups {
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.groups-padding {
+  padding: 0 8px 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* exhibitions single page*/
+.hero {
+  width: 100%;
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 70px;
+}
+
+.hero-goldenkingdom {
+  background-image: url("./images/gkhero.jpg");
+}
+
+.hero-sitio {
+  background-image: url("./images/sitio2.jpg");
+}
+.seperating-line {
+  margin: 24px 0;
+}
+
+.centered {
+  text-align: center;
+}
+
+.image-max {
+  max-width: 200px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hero-title {
+  color: #fff;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.6);
+  font-size: 60px;
+  margin: 0;
+  font-weight: 900;
+}
+
+/* help page*/
+.header-content {
+  padding: 0 16px 24px;
+}
+.grey-background {
+  background-color: lightgray;
+  width: 75%;
+  margin: 0 auto;
+  padding: 16px 8px;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.content-box {
+  border-top: 1px solid lightpink;
+  padding: 0 16px;
+}
+
+.content-nav {
+  list-style: none;
+  padding: 0;
+}
+
+@media (min-width: 321px) {
+  .packages {
+    width: 48%;
+  }
+}
+
+@media (min-width: 768px) {
+  .fa-bars {
+    display: none;
+  }
+  .mobile-hide {
+    display: flex;
+  }
+  .mobile-show {
+    display: none !important;
+  }
+  .packages {
+    width: 23%;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  }
+  .packages:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  }
+  .packages-groups:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  }
+}
+
+@media (min-width: 1224px) {
+}
+
+@media (min-width: 1400px) {
+  .collections-text {
+    height: 280px;
+  }
+}

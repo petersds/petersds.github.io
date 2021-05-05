@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Final Project</title>
+    <meta charset="utf-8" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
+    <script src="https://use.fontawesome.com/92b1e9762c.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-row">
+            <img width="400" src="./images/headerlogog.PNG" alt="">
+            <a class="login" href="#">Login</a>
+        </div>
+        <div class="collections-text">
+            <h1>Exhibitions</h1>
+        </div>
+        <nav class="nav-links">
+            <div class="mobile-nav mobile-show">
+                <i class="fa fa-bars"></i>
+                <div>
+                    <form class="searchmenu" method="post" action="https://cscie12.dce.harvard.edu/echo">
+                        <input type="text" name="search" id="search" size="100" placeholder="search the collections" />
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </form>
+                    <a class="advanced" href="#">Advanced Search</a>
+                </div>
+            </div>
+            <ul class="nav-links-ul mobile-hide">
+                <li><a href="/">Collections</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./groups.html">Groups</a></li>
+                <li><a href="./people.html">People</a></li>
+                <li><a class="active" href="./exhibitions.html">Exhibitions</a></li>
+                <li><a href="./help.html">Help</a></li>
+
+                <li>
+                    <div>
+                        <form class="searchmenu" method="post" action="https://cscie12.dce.harvard.edu/echo">
+                            <input type="text" name="search" id="search-desk" size="100"
+                                placeholder="search the collections" />
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </form>
+                        <a class="advanced" href="./advancedsearch.html">Advanced Search</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="explore">
+
+
+            <h2>Exhibitions</h2>
+            <div class="container-lg">
+                <div class="articles articles-centered">
+
+                    <article class="groups">
+                        <img src="./images/restting..jpg" alt="Photo of Table" />
+                        <h3 class="page-subtitle">Resetting the Table: Food & Our Changing Tastes</h3>
+                        <a class="groups-btn" href="https://www.peabody.harvard.edu/resetting-the-table-exhibition">Read More &#x276F;</a>
+
+                    </article>
+                    <article class="groups">
+                        <img src="./images/alltheworld.jpg" alt="Photo of Exhibit Man" />
+                        <h3 class="page-subtitle">All the World Is Here: Harvard’s Peabody Museum and the Invention of American Anthropology</h3>
+                        <a class="groups-btn" href="https://www.peabody.harvard.edu/all-the-world">Read More &#x276F;</a>
+
+                    </article>
+                    <article class="groups">
+                        <img src="./images/stella14.jpg" alt="Photo of stella 14" />
+                        <h3 class="page-subtitle">Maya: Hiden Worlds Revealed</h3>
+                        <a class="groups-btn" href="#">Read More &#x276F;</a>
+                    </article>
+                    <article class="groups">
+                        <img src="./images/goldsa.jpg" alt="Photo of gold cuff " />
+                        <h3 class="page-subtitle">Golden Kingdomws: Luxuroy and Legacy in the Ancient Americas</h3>
+                        <a class="groups-btn" href="./goldenkingdom.html">Read More &#x276F;</a>
+                    </article>
+                    <article class="groups">
+                        <img src="./images/raven2.jpg" alt="Photo of " />
+                        <h3 class="page-subtitle">Raven's Journey</h3>
+                        <a class="groups-btn" href="#">Read More &#x276F;</a>
+                    </article>
+                    <article class="groups">
+                        <img src="./images/afrfish.jpg" alt="Photo of " />
+                        <h3 class="page-subtitle">Currents: Water in African Art</h3>
+                        <a class="groups-btn" href="#">Learn More &#x276F;</a>
+                    </article>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+<footer>
+    <nav class="contactplus">
+        <ul>
+            <li><a href="https://www.harvard.edu/">Harvard University</a></li>
+                <li><a href=" https://anthropology.fas.harvard.edu/">Department of Anthropology</a></li>
+            <li><a href="https://heb.fas.harvard.edu/">Human Evolutionary Biology</a></li>
+        </ul>
+    </nav>
+
+
+    <p>Copyright &copy;
+        <script>document.write(new Date().getFullYear())</script> Peabody Museum of Archaeology and Ethnology
+    </p>
+
+    <nav class="privacyplus">
+        <ul>
+            <li><a href="https://www.peabody.harvard.edu/node/563">Privacy</a></li>
+            <li><a href="https://accessibility.huit.harvard.edu/digital-accessibility-policy">Digital Accessibility</a>
+            </li>
+            <li><a href="https://www.peabody.harvard.edu/node/778">Terms of Use</a></li>
+            <li><a href="https://www.peabody.harvard.edu/webmaster">Webmaster</a></li>
+        </ul>
+    </nav>
+</footer>
+
+</body>
+
+</html>

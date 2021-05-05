@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Final Project</title>
+    <meta charset="utf-8" />
+    <script src="https://use.fontawesome.com/92b1e9762c.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css" />
+
+</head>
+
+<body>
+    <header>
+        <div class="header-row">
+            <img width="400" src="./images/headerlogog.PNG" alt="">
+            <a class="login" href="#">Login</a>
+        </div>
+        <div class="collections-text">
+            <h1>Help</h1>
+        </div>
+        <nav class="nav-links">
+            <div class="mobile-nav mobile-show">
+                <i class="fa fa-bars"></i>
+                <div>
+                    <form class="searchmenu" method="post" action="https://cscie12.dce.harvard.edu/echo">
+                        <input type="text" name="search" id="search" size="100" placeholder="search the collections" />
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </form>
+                    <a class="advanced" href="./advancedsearch.html">Advanced Search</a>
+                </div>
+            </div>
+            <ul class="nav-links-ul mobile-hide">
+                <li><a href="/">Collections</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./groups.html">Groups</a></li>
+                <li><a href="./people.html">People</a></li>
+                <li><a href="./exhibitions.html">Exhibitions</a></li>
+                <li><a class="active" href="./help.html">Help</a></li>
+
+                <li>
+                    <div>
+                        <form class="searchmenu" method="post" action="https://cscie12.dce.harvard.edu/echo">
+                            <input type="text" name="search" id="search-desk" size="100"
+                                placeholder="search the collections" />
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </form>
+                        <a class="advanced" href="#">Advanced Search</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Peabody Museum Online Collections Help</h2>
+        <h3>Contents</h3>
+        <ul class="content-nav">
+            <li><a href="#keyword">Keyword Search</a></li>
+            <li><a href="#advanced">Advanced Search</a></li>
+            <li><a href="#result-views">Viewing Records and Search Results</a></li>
+            <li><a href="#favorites">Favorites</a></li>
+            <li><a href="#faqs">Frequently Asked Questions</a></li>
+            <li><a href="#ask">Contact Information</a></li>
+        </ul>
+
+        <article id="keyword" class="content-box">
+            <h3>Keyword Search</h3>
+            <p>
+                Keyword Search queries a number of fields (categories of information) in the database at the same time
+                for each of the
+                terms entered and returns the records where each term was found in at least one field. The more terms
+                added in Keyword
+                Search, the narrower the search results will be. A list of the "behind the scenes" fields used in
+                Keyword Search is
+                available below under Database Fields Queried by Keyword Search.
+            </p>
+
+            <p>Separate each keyword by a space. Most punctuation marks will be ignored.</p>
+            <p>The below example will return records where all terms (marble, and pigment, and gold) are found somewhere
+                in
+                a
+                record.
+                Records that contain marble and pigment, but not gold, will not be included in the results since only
+                two
+                of
+                the entered
+                terms match for those records. --! I think this is an OR search !--</p>
+
+            <p class="grey-background">
+                Example: <span class="italic">marble pigment gold</span>
+            </p>
+            <br>
+            <p>To search for an exact phrase, enclose the phrase in double quotes. The below example would only find
+                records that
+                include the complete phrase, "Shrine in the Temple of the Cross" in any of the queried fields. Phrase
+                searching is
+                most useful when
+                looking for the exact title of an object or a person's name.</p>
+            <p class="grey-background">
+                Example: <span class="italic">"Chauncey C. Nash"</span>
+            </p>
+
+            <h3>Additional Considerations for Keyword Searching</h3>
+            <p>Searches are not case sensitive.</p>
+            <p>The following special characters and punctuation marks are ignored in searches: |, *, ^, (, ), $, ~, {,
+                }, @, +, #, !,
+                and , (comma). Blue+bead, blue; bead, and blue, bead are all treated the same as blue bead and retrieve
+                the same
+                results.</p>
+            <p>Except when using phrase search (multiple words surrounded by double quotes), the following words are
+                ignored for search
+                purposes: of, the, a, and, in.</p>
+            <p class="grey-background">
+                Example: <span class="italic"> Shrine in the Temple of the Cross (without double quotes) will search
+                    only for the
+                    words Shrine and Temple and Cross ignoring the
+                    words, in and the and of. This works similarly to web searches and is intended to reduce the number
+                    of
+                    unwanted or irrelevant
+                    results.</span>
+            </p>
+
+            <h3>Database Fields Queried by Keyword Search</h3>
+            <p>The Keyword Search feature of Peabody Museum's Online Collections site queries a number of fields in the
+                database at the
+                same time. Results include all object records with matching values in any of the fields described below.
+                See Help for
+                the Advanced Search feature for details about more strictly defined queries.</p>
+
+            <div class='query-fields'>
+                <h4>Object Number</h4>
+                <p>The unique number assigned to an object by the Museum (such as 87-45-30/45622), also known as a
+                    catalog or accession
+                    number. These numbers are used to reference objects in publications and to identify objects in the
+                    Museum database.</p>
+
+                <h4 class="fields">Description (Display Title)</h4>
+                <p>The written out description of an object that ties together, and supplements, details recorded in
+                    other fields.
+                </p>
+
+                <h4 class="fields">Classification</h4>
+                <p>One or more words that describe what an object is in fairly basic terms (such as statue, sherd, or
+                    coin). These terms
+                    often relate, in some way, to the function or use of an object.
+                </p>
+
+                <h3 class="fields">Materials</h3>
+                <p>The materials most present in the physical composition of the object (e.g. leather, wool, wood).
+                </p>
+
+                <h4 class="fields">Collecion Type</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod, expedita impedit! Ad impedit ducimus
+                    unde facilis, porro quam? Eligendi veritatis minus porro ex error modi in fugit repudiandae odio
+                    praesentium?
+                </p>
+
+
+                <h4 class="fields">People Search</h4>
+                <p>Constituent Names, Institutions, Sources related to the object record
+                </p>
+
+                <h4 class="fields">Thesauruse Concepts</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, ducimus? Repudiandae, libero
+                    voluptatem. Incidunt minima blanditiis aperiam numquam eos fuga? Voluptas, laborum veniam. Quisquam
+                    consectetur explicabo pariatur praesentium vel earum.
+                </p>
+
+                <h4 class="fields">Aquisition Related People</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod, expedita impedit! Ad impedit ducimus
+                    unde facilis,
+                    porro quam? Eligendi veritatis minus porro ex error modi in fugit repudiandae odio praesentium?
+                </p>
+
+                <h4 class="fields">Excollection Related People</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod, expedita impedit! Ad impedit ducimus
+                    unde facilis,
+                    porro quam? Eligendi veritatis minus porro ex error modi in fugit repudiandae odio praesentium?
+                </p>
+
+                <h4 class="fields">Geolocale</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod, expedita impedit! Ad impedit ducimus
+                    unde facilis,
+                    porro quam? Eligendi veritatis minus porro ex error modi in fugit repudiandae odio praesentium?
+                </p>
+                <h4 class="fields">Intrasite</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod, expedita impedit! Ad impedit ducimus
+                    unde facilis,
+                    porro quam? Eligendi veritatis minus porro ex error modi in fugit repudiandae odio praesentium?
+                </p>
+
+                <h4 class="fields">Object Related People</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod, expedita impedit! Ad impedit ducimus
+                    unde facilis,
+                    porro quam? Eligendi veritatis minus porro ex error modi in fugit repudiandae odio praesentium?
+                </p>
+                <h4 class="fields">Geograpghy/Provenience/Site Name</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod, expedita impedit! Ad impedit ducimus
+                    unde facilis,
+                    porro quam? Eligendi veritatis minus porro ex error modi in fugit repudiandae odio praesentium?
+                </p>
+                <h4 class="fields">Provenanace Related People</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod, expedita impedit! Ad impedit ducimus
+                    unde facilis,
+                    porro quam? Eligendi veritatis minus porro ex error modi in fugit repudiandae odio praesentium?
+                </p>
+            </div>
+        </article>
+
+        <article id="advanced" class="content-box">
+            <h3>Advanced Search</h3>
+            <p>
+                Advanced Search provides additional control over querying the Peabody Museum's Online Collections
+                database. Enter a term
+                or multiple terms into the relevant fields to search by category of information. Most of the Advanced
+                Search categories
+                query multiple fields "behind the scenes" in online database. For a list of what kinds of information
+                are searched by
+                each Advanced Search field, see Database Fields Queried By Advanced Search below.
+            </p>
+            <p>Each additional term entered in each separate search category narrows the search.</p>
+            <p class="grey-background">
+                Example: <span class="italic"> : statue in Description and marble in Material
+                    will return only objects that have statue in one of the fields searched by Description and
+                    marble in the Material field. Statues that do not
+                    have a Material of marble will not be included in the search results.
+                </span>
+            </p>
+            <br>
+            <p>Multiple terms may be entered in any single field. Separate each term by a space to narrow the query
+                (creating "and"
+                relationships). Separate each term by the word OR in a field to include all records that match any, but
+                not necessarily
+                each, of the desired terms.</p>
+            <p>Each additional term entered in each separate search category narrows the search.</p>
+            <p class="grey-background">
+                Example: <span class="italic">: marble pigment in the Material field will return only
+                    objects that have both of those terms (marble and pigment) in either the Material field.
+                </span>
+            </p>
+            <br>
+            <p class="grey-background">
+                Example (OR operator): <span class="italic"> marble OR pigment in the Material field will
+                    return any objects that have either term, or both terms, in the Material.
+                </span>
+            </p>
+            <br>
+            <p>To search for an exact phrase, enclose the phrase in double quotes. Phrase searching works in all of the
+                Advanced Search
+                fields except for Classification and Geography.Provenience/Site Name. An exact phrase search is assumed
+                for
+                Object
+                Number, so quotes are not required for queries in that field. While phrase searching can be used in a
+                number of the
+                search fields, it is especially useful in the Description field (since it searches
+                free-text fields in the
+                database including Description and Title).</p>
+            <p class="grey-background">
+                Example: <span class="italic">"Shrine in the Temple of the Cross"</span>
+            </p>
+            <p class="grey-background">
+                This example would only find records that include the complete phrase "Shrine in the Temple of the Cross
+                in any of the
+                relevant
+                fields.
+
+            </p>
+
+            <h3>Additional Considerations for Advanced Searching</h3>
+            <p>Searches are not case sensitive.</p>
+            <p>The following special characters and punctuation marks are ignored in searches: |, *, ^, (, ), $, ~, {,
+                }, @, +, #, !,
+                and , (comma). Blue+bead, blue; bead, and blue, bead are all treated the same as blue bead and retrieve
+                the same
+                results.</p>
+            <p>Except when using phrase search (multiple words surrounded by double quotes), the following words are
+                ignored for search
+                purposes: of, the, a, and, in.</p>
+            <p class="grey-background">
+                Example: <span class="italic"> Shrine in the Temple of the Cross (without double quotes) will search
+                    only for the
+                    words Shrine and Temple and Cross ignoring the
+                    words, in and the and of. This works similarly to web searches and is intended to reduce the number
+                    of
+                    unwanted or irrelevant
+                    results.</span>
+            </p>
+
+            <h3>Database Fields Queried by Advanced Search</h3>
+            <p>The Advanced Search feature of Penn Museum's Online Collections site queries a number of fields in the
+                database at the same time. Results include all object records with matching values in any of the fields
+                described below. See Help for the Advanced Search feature for details about more strictly defined
+                queries.</p>
+
+            <div class='query-fields'>
+                <h4>Image Availabe</h4>
+                <p>Check this box to include records with image(s) avialabe.
+                </p>
+
+                <h4>Object Number</h4>
+                <p>The unique number assigned to an object by the Museum (such as 87-45-30/45622), also known as a
+                    catalog or accession
+                    number. These numbers are used to reference objects in publications and to identify objects in the
+                    Museum database.
+                </p>
+
+                <h4 class="fields">Description</h4>
+                <p>The written out description of an object that ties together, and supplements, details recorded in
+                    other fields. Tere are several types of descriptions users may encounter. Some are avaialbe to the
+                    Public, while others requier Researcher access, as denoted below with an *.</p>
+                <ul>
+                    <li>Display TItle:</li>
+                    <li>Object Description:</li>
+                    <li>Old Description:</li>
+                    <li>Inventory Description:</li>
+                    <li>Indingenous Term:</li>
+                    <li>*Catalog Transcription:</li>
+                    <li>*Archival Description:</li>
+                    <li>*Conservation Description:</li>
+                    <li>*Publications Title:</li>
+                    <li>*Cast Name:</li>
+                </ul>
+
+
+                <h4 class="fields">Culture</h4>
+                <p>
+                </p>
+
+                <h4 class="fields">Materials</h4>
+                <p>The materials most present in the physical composition of the object (e.g. leather, wool, wood).
+                </p>
+
+                <h4 class="fields">Collection Type</h4>
+                <p>Repsresents the type of COllection an object is assisgned. Archaelogical, Biological, Archival, and
+                    so forth.
+                </p>
+
+                <h4 class="fields">Classification</h4>
+                <p>One or more words that describe what an object is in fairly basic terms (such as statue, sherd, or
+                    bowl). These
+                    terms
+                    often relate, in some way, to the function or use of an object.
+                </p>
+
+                <h4 class="fields">Geograpghy/Provenience/Site Namee</h4>
+                <p>The location where the object was made or most used. These terms generally include broader locations
+                    (such as
+                    continent)
+                    as well as narrower locations (such as village) where available.
+                </p>
+
+                <h4 class="fields">Intrasite</h4>
+                <p>Constituent Names, Institutions, Sources related to the object record
+                </p>
+
+                <h4 class="fields">Addiotnal Geographic Terms</h4>
+                <p>Constituent Names, Institutions, Sources related to the object record
+                </p>
+
+                <h4 class="fields">Artist</h4>
+                <p>Constituent Names, Institutions, Sources related to the object record
+                </p>
+
+                <h4 class="fields">Proveance Related People</h4>
+                <p>Constituent Names, Institutions, Sources related to the object record
+                </p>
+
+
+            </div>
+        </article>
+
+        <article id="result-views" class="content-box">
+            <h3>Viewing Records and Search Results</h3>
+
+            <h4>Types of Results</h4>
+            <p>There are different types of search results, such as object records and people records. When there is
+                more than one type
+                of result, you can choose different types of records to view.</p>
+
+            <h4>Grid/List View</h4>
+            <p>You can view a set of results in an image grid or list view. Use the dropdown to switch between different
+                types of
+                views.</p>
+
+            <h4>Filters</h4>
+            <p>You can refine a result set by using filters to narrow down results. For example, you can filter to see
+                only works that
+                have images within any result set. You can also clear each filter to revert to a larger result set, or
+                clear all filters
+                to get to your original result set.</p>
+
+            <h4>Images</h4>
+            <p>Why Is AN Image Shown As Unavailable?
+                An image may be shown as not available if it is not yet available in our database, or if it cannot be
+                displayed for
+                copyright reasons.</p>
+        </article>
+
+
+        <article id="favorites" class="content-box">
+            <h3>Favorites</h3>
+            <h4>What Are Favorites?</h4>
+            <p>Favorites allows you to create your own sets from the collection objects available on this site. You can
+                share your
+                Favorites with others, or create sets of artworks for your own viewing (Favorites are private by
+                default).</p>
+
+            <p>You can optionally add a description for each Favorites set. You can view your collection sets by going
+                to the
+                "Favorites" page and logging into your account.</p>
+
+            <h4>How Do I Use Favorites?</h4>
+            <p>To use Favorites, you must first register an account. Once you have completed registration, you can start
+                creating
+                Favorites sets and adding artworks to them.</p>
+
+            <p>You can add artworks to your sets by clicking on the heart symbol while viewing objects, and selecting
+                which set to add
+                the artwork(s). After selection, you can choose to add all selected works on the page to a Favorite. You
+                can also add
+                the entire result set or all objects on a page.</p>
+
+            <h4>How Do I Share A Favorite With Someone Else?</h4>
+            <p>If you mark your Favorites set public, this Favorite will be visible to others in the Community Favorites
+                section. The
+                option to mark a set as public is available when you edit your Favorite.</p>
+
+            <p>After setting a Favorite set as public, you can also share the link to allow others to view your set.</p>
+        </article>
+
+        <article id="faqs" class="content-box">
+            <h3>Frequently Asked Questions</h3>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, ratione magni rerum iste saepe
+                esse provident non ipsam fuga sapiente vitae velit corporis doloribus beatae molestiae optio, sint
+                distinctio aperiam.</p>
+        </article>
+
+        <article id="ask" class="content-box">
+            <h3>Contact Us</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, ratione magni rerum iste saepe
+                esse provident
+                non ipsam fuga sapiente vitae velit corporis doloribus beatae molestiae optio, sint distinctio
+                aperiam.</p>
+        </article>
+
+    </div>
+
+    <div class="spacer"></div>
+    <footer>
+        <nav class="contactplus">
+            <ul>
+                <li><a href="https://www.harvard.edu/">Harvard University</a></li>
+                <li><a href=" https://anthropology.fas.harvard.edu/">Department of Anthropology</a></li>
+                <li><a href="https://heb.fas.harvard.edu/">Human Evolutionary Biology</a></li>
+            </ul>
+        </nav>
+
+
+        <p>Copyright &copy;
+            <script>document.write(new Date().getFullYear())</script> Peabody Museum of Archaeology and Ethnology
+        </p>
+
+        <nav class="privacyplus">
+            <ul>
+                <li><a href="https://www.peabody.harvard.edu/node/563">Privacy</a></li>
+                <li><a href="https://accessibility.huit.harvard.edu/digital-accessibility-policy">Digital
+                        Accessibility</a>
+                </li>
+                <li><a href="https://www.peabody.harvard.edu/node/778">Terms of Use</a></li>
+                <li><a href="https://www.peabody.harvard.edu/webmaster">Webmaster</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+</body>
+
+</html>
